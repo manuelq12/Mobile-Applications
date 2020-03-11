@@ -1,0 +1,115 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.reto1"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:10:5-67
+16-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:10:22-64
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:11:5-81
+17-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:12:5-79
+18-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:12:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\e589f31d50479c17f5b8378a00782070\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\e589f31d50479c17f5b8378a00782070\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\e589f31d50479c17f5b8378a00782070\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
+23
+24    <application
+24-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:14:5-43:19
+25        android:allowBackup="true"
+25-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:15:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:16:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:17:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:18:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:19:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:20:9-40
+34        <activity android:name="com.example.reto1.AddMarkerActivity" />
+34-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:21:9-64
+34-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:21:19-52
+35        <!--
+36             The API key for Google Maps-based APIs is defined as a string resource.
+37             (See the file "res/values/google_maps_api.xml").
+38             Note that the API key is linked to the encryption key used to sign the APK.
+39             You need a different API key for each encryption key, including the release key that is used to
+40             sign the APK for publishing.
+41             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+42        -->
+43        <meta-data
+43-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:30:9-32:55
+44            android:name="com.google.android.geo.API_KEY"
+44-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:31:13-58
+45            android:value="@string/google_maps_key" />
+45-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:32:13-52
+46
+47        <activity
+47-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:34:9-42:20
+48            android:name="com.example.reto1.MapsActivity"
+48-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:35:13-41
+49            android:label="@string/title_activity_maps" >
+49-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:36:13-56
+50            <intent-filter>
+50-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:37:13-41:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:38:17-69
+51-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:38:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:40:17-77
+53-->C:\Users\mapac\OneDrive\Documentos\Icesi\Profesionalizantes\Aplicaciones Moviles\Proyectos\Reto1\app\src\main\AndroidManifest.xml:40:27-74
+54            </intent-filter>
+55        </activity>
+56        <!-- Needs to be explicitly declared on P+ -->
+57        <uses-library
+57-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\e589f31d50479c17f5b8378a00782070\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+58            android:name="org.apache.http.legacy"
+58-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\e589f31d50479c17f5b8378a00782070\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+59            android:required="false" />
+59-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\e589f31d50479c17f5b8378a00782070\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+60
+61        <activity
+61-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\433d318a6d98fc606dc64c44338eb056\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+62            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+62-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\433d318a6d98fc606dc64c44338eb056\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+63            android:exported="false"
+63-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\433d318a6d98fc606dc64c44338eb056\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+64-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\433d318a6d98fc606dc64c44338eb056\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+65
+66        <meta-data
+66-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\ba80dffc853d3c3fc8c148a4ce5df58a\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+67            android:name="com.google.android.gms.version"
+67-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\ba80dffc853d3c3fc8c148a4ce5df58a\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+68            android:value="@integer/google_play_services_version" />
+68-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\mapac\.gradle\caches\transforms-2\files-2.1\ba80dffc853d3c3fc8c148a4ce5df58a\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+69    </application>
+70
+71</manifest>
