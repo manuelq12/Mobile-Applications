@@ -1,5 +1,7 @@
 package com.example.clase11_chatandroid.control;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,9 +14,11 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.clase11_chatandroid.R;
 import com.example.clase11_chatandroid.model.Message;
+import com.example.clase11_chatandroid.util.HTTPSWebUtilDomi;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class MessagesAdapter extends BaseAdapter {
@@ -61,23 +65,46 @@ public class MessagesAdapter extends BaseAdapter {
             imageRow.setVisibility(View.VISIBLE);
 
             String nameImage = messages.get(i).getId();
+            File imageFile = new File(parent.getContext().getExternalFilesDir(null) + "/" + nameImage);
 
-            FirebaseStorage storage = FirebaseStorage.getInstance();
-            storage.getReference().child("chats").child(nameImage)
-                    .getDownloadUrl().addOnSuccessListener(
-              uri -> {
-                  Log.e(">>>", uri.toString());
-                  Glide.with(parent)
-                          .asBitmap()
-                          .load(uri)
-                          .centerCrop()
-                          .into(imageRow);
-              }
-            );
+            if(imageFile.exists()){
+                root.post(
+                        ()->{
+                            loadImage(imageRow,imageFile);
+                        }
+                );
+            }
+            else{
+                FirebaseStorage storage = FirebaseStorage.getInstance();
+                storage.getReference().child("chats").child(nameImage)
+                        .getDownloadUrl().addOnSuccessListener(
+                        uri -> {
+                            new Thread(
+                                    ()->{
+                                        File f = new File(parent.getContext().getExternalFilesDir(null) + "/" + nameImage);
+                                        HTTPSWebUtilDomi utilDomi = new HTTPSWebUtilDomi();
+                                        utilDomi.saveURLImageOnFile(uri.toString(),f);
 
+                                        root.post(
+                                                ()->{
+                                                    loadImage(imageRow,f);
+                                                }
+                                        );
+
+                                    }
+                            ).start();
+
+                        }
+                );
+            }
         }
 
         return root;
+    }
+
+    public void loadImage(ImageView imageRow, File f) {
+        Bitmap bitmap = BitmapFactory.decodeFile(f.toString());
+        imageRow.setImageBitmap(bitmap);
     }
 
     public void addMessage(Message message){

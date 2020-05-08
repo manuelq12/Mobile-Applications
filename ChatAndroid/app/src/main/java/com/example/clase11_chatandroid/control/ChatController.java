@@ -181,6 +181,7 @@ public class ChatController implements View.OnClickListener {
                     );
                 }
                 else{
+
                     FirebaseDatabase.getInstance().getReference()
                             .child("chats").child(chatroom).child(pushId)
                             .setValue(message);
