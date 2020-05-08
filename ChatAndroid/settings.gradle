@@ -1,0 +1,2 @@
+rootProject.name='Clase11_ChatAndroid'
+include ':app'
